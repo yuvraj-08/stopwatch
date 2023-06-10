@@ -5,34 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Yuvraj Singh">
     <title>Stopwatch App</title>
+    <!-- Link to Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Link to Stylesheet  -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon  -->
     <link rel="shortcut icon" href="https://i.ibb.co/D8KDcVn/yuvraj-logo.png" type="image/x-icon">
 </head>
 <body>
 
-
+  <!-- Stopwatch container starts  -->
   <div class="container  stopwatch-container">
     <h1 class="text-center ">Stopwatch</h1>
     <div class="text-center">
+      <!-- Displays Time  -->
       <h2 id="display">00:00:00:000</h2>
+      <!-- Buttons To Control Stopwatch -->
       <button id="startBtn" class="btn btn-primary">Start</button>
       <button id="stopBtn" class="btn btn-danger">Stop</button>
       <button id="resetBtn" class="btn btn-secondary">Reset</button>
       <hr>
+      <!-- Container which contains stopped time list -->
       <div class="list-container">
         <h5>Stop Time :-</h5>
         <span>HH:MM:SS.MMM (hours, minutes, seconds, milliseconds)</span>
+        <!-- stop time list  -->
         <ol id="timeList"></ol>
       </div>
     </div>
   </div>
+  <!-- Stopwatch container ends  -->
 
-
+  
+  <!-- Footer Starts  -->
   <footer class="text-center">
     <p>Copyright &copy; 2023 | All Rights Reserved - <a target="_blank" href="https://beacons.ai/yuvraj08">Yuvraj Singh</a></p>
   </footer>
+  <!-- Footer Ends  -->
 
+  <!-- Linking Script  -->
   <script src="script.js"></script>
 </body>
 </html>
